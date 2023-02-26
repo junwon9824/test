@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.won.test.service.logic.controller.UserControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-18T07:16:34" hostname="DESKTOP-ORFQAKD" time="1.414">
+  <properties/>
+  <testcase name="register()" classname="io.won.test.service.logic.controller.UserControllerTest" time="1.414"/>
+  <system-out><![CDATA[16:16:21.539 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [UserControllerTest]: using SpringBootContextLoader
+16:16:21.553 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [io.won.test.service.logic.controller.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:16:21.555 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.won.test.service.logic.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:16:21.657 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [UserControllerTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+16:16:21.906 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\intellijtestproject\untitled\build\classes\java\main\io\won\test\service\logic\userRestApp.class]
+16:16:21.910 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.won.test.service.logic.userRestApp for test class io.won.test.service.logic.controller.UserControllerTest
+16:16:22.664 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+16:16:22.670 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+16:16:22.677 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [UserControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+16:16:22.686 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [UserControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.1)
+
+2023-01-18T16:16:28.727+09:00  INFO 31464 --- [    Test worker] i.w.t.s.l.controller.UserControllerTest  : Starting UserControllerTest using Java 17.0.2 with PID 31464 (started by junho in E:\intellijtestproject\untitled)
+2023-01-18T16:16:28.732+09:00  INFO 31464 --- [    Test worker] i.w.t.s.l.controller.UserControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2023-01-18T16:16:34.357+09:00  INFO 31464 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-01-18T16:16:34.358+09:00  INFO 31464 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-01-18T16:16:34.363+09:00  INFO 31464 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-01-18T16:16:34.427+09:00  INFO 31464 --- [    Test worker] i.w.t.s.l.controller.UserControllerTest  : Started UserControllerTest in 10.736 seconds (process running for 15.543)
+2023-01-18T16:16:34.493+09:00  INFO 31464 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.fasterxml.jackson.databind.ObjectMapper io.won.test.service.logic.controller.UserControllerTest.objectMapper
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /users
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json", Content-Length:"84"]
+             Body = {"id":"d9394c0b-7563-40f4-8d2f-279e70ad4c31","name":"park","email":"park@naver.com"}
+    Session Attrs = {}
+
+Handler:
+             Type = io.won.test.service.logic.controller.UserController
+           Method = io.won.test.service.logic.controller.UserController#register(User)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", Content-Length:"36"]
+     Content type = application/json
+             Body = d9394c0b-7563-40f4-8d2f-279e70ad4c31
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
