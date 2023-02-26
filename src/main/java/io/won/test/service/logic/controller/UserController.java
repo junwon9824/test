@@ -33,7 +33,7 @@ public class UserController {
         return userService.findAll();
     }
 
-    @PutMapping("/users")s
+    @PutMapping("/users")sㄴㄴㄴ
     public void modify(@RequestBody User newUser) {
         userService.modify(newUser);
 
